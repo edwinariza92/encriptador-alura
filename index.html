@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css/reset.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Encriptador</title>
+</head>
+
+<body>
+  <main>
+    <nav class="logo">
+      <img src="imagenes/Logo.png" alt="Logo">
+    </nav>
+    <section>      
+        <div >
+          <textarea name="text" id="texto" cols="90" rows="10"  placeholder="Ingrese el texto aquí" autofocus></textarea>
+          
+        </div>
+        <div class="frame1">
+          <p> <img src="imagenes/bi_exclamation-circle-fill.png" alt="Exclamacion"> Solo letras minúsculas y sin acento
+          </p>  
+        </div>
+        <div class="frame2">
+            <button class="encriptar" id="encriptar" onclick="encriptar()"> <h1> Encriptar</h1></button>
+            <button class="desencriptar" id="desencriptar" onclick="desEncriptar()" ><h1> Desencriptar</h1></button>
+        </div>
+    </section>
+    <section >
+      <div class="rectangulo" id="rectangulo"></div>
+      <div class="mensaje" id="mensaje"></div>
+      <div class="muneco" id="muneco"><img src="imagenes/Muñeco.png" alt="Muñeco"></div>
+        <div class="caja" id="caja">
+          <h1>Ningún mensaje fue encontrado</h1>
+          <p> Ingresa el texto que deseas encriptar o desencriptar</p>
+          
+        </div>
+      <div>
+        <button  class="copiar" id="copiar" onclick="copiar()" > <h1> Copiar </h1></button>
+      </div>
+          
+    </section>
+      
+  </main>
+    <footer>
+      <p class="copyright">&copy Copyright Edwin Ariza - 2022</p>
+     </footer>
+</body>
+
+</html>
